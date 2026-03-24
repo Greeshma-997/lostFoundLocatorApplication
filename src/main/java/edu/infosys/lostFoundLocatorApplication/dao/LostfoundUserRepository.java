@@ -1,10 +1,15 @@
 package edu.infosys.lostFoundLocatorApplication.dao;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
 
 
 import edu.infosys.lostFoundLocatorApplication.bean.LostfoundUser;
 
 public interface LostfoundUserRepository extends JpaRepository<LostfoundUser,String> {
-
+	@Query("SELECT a FROM LostfoundUser a WHERE a.role = 'Student'")
+    public List<LostfoundUser> getAllStudents();
 }

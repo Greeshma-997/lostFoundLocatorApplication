@@ -1,5 +1,7 @@
 package edu.infosys.lostFoundLocatorApplication.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.core.userdetails.UserDetails;
@@ -28,6 +30,10 @@ public class LostfoundUserService implements UserDetailsService{
 			this.role=user.getRole();
 			return this.user;
 		}
+		public List<LostfoundUser> getAllStudents() {
+		    return repository.getAllStudents();
+		}
+		
 		public String getUserId() {
 			return userId;
 		}
