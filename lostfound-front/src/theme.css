@@ -1,0 +1,94 @@
+/* Full page background */
+.theme-bg {
+  min-height: 100vh;
+  background: url("./assets/Campus.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Card */
+.theme-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 45px 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading style */
+.theme-card h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Input styling */
+.theme-card .form-control {
+  border-radius: 12px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  transition: 0.3s ease;
+}
+
+.theme-card .form-control:focus {
+  box-shadow: 0 0 8px #6aa9ff;
+  border: none;
+}
+
+/* Gradient button */
+.theme-btn {
+  background: linear-gradient(135deg, #ff7eb3, #6aa9ff);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+
+.theme-layout {
+  min-height: 100vh;
+  background: url("./assets/Campus.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Register button subtle style */
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border-radius: 12px;
+  border: 1px solid white;
+  padding: 8px;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
